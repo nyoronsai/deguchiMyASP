@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+
+/* スタイルを上書きしたい場合、こちらに追記してください。 */
+body {
+-webkit-text-size-adjust: 100%;
+}
+
+h1 {
+	background-color: #444;
+	color: #eee;
+	font-size: 26px;
+	line-height: 48px;
+	/*background-image: url(./images/logo.png) !important;*/
+}
+
+h1 div{
+	float: left;
+	padding-right: 10px;
+}
+
+h4 { 
+color:#8A4259;
+border-bottom: 1px solid #8A4259;
+ }
+
+.mtb10 {
+	margin: 10px 0;
+}
+
+/*
+----------------------------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+}
+
+#pageHeader {
+	color: #333;
+	width: 100%;
+	padding-top: 20px;
+	height: 55px;
+	background-color: #FFE8D0;
+	position: fixed;
+}
+
+#logo {
+	width: 180px;
+	float: left;
+}
+
+#pageTitle {
+	font-size: 2em;
+	font-weight: bold;
+	padding-left: 185px;
+}
+
+#mainVisual {
+	padding-top: 75px;
+	margin: 0 auto;
+	border-bottom: 3px solid #8A4259;
+}
+
+#container {
+	width: 100%;
+}
+
+#sidebar {
+	padding-top: 15px;
+	width: 300px;
+	float: left;
+}
+
+#content2 {
+	padding-top: 15px;
+	width: 620px;	
+}
+
+#content2 table {
+	width: 100%;	
+}
+
+#footer {
+	border-radius: 0;
+	background-image: none;
+	background-color: #FFE8D0;	
+	color: #333;
+	padding: 0;
+}
+
+.footNav {
+	background-color: #8A4259;
+	color: #fff;
+	padding: 10px;
+}
+
+.pageWidth {
+	margin: 0 auto;
+	width: 950px;
+}
+.pageWidth img {
+	max-width: 950px;
+	width: 100%;
+}
+.footNav ul,
+.banner ul {
+	/*margin: 0;*/
+	padding: 0;
+	list-style: none;
+}
+
+.footNav ul li,
+.banner ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footNav ul li {
+	padding: 3px;
+	display: inline;	
+}
+
+.footNav ul li a {
+	color: #fff;	
+}
+
+ul.menu {
+	margin: 0;
+	padding: 0;	
+}
+ul.menu li {
+	background-color: #8A4259;
+	margin: 0;
+	list-style: none;
+	color: #333;
+	background-image: none;
+	border: none;
+	padding: 8px;
+	line-height: 2em;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px;
+}
+
+ul.menu li.active {
+	background-color: #8A4259;
+	margin: 0;
+	list-style: none;
+	color: #333;
+	background-image: none;
+	border: none;
+	padding: 8px;
+	line-height: 2em;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px;
+}
+
+.bottom_menu ul {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;	
+}
+
+.bottom_menu ul li {
+	margin-bottom: 5px;
+}
+
+div.index h3,
+h2 {
+	background-color: #8A4259;
+	color: #fff;
+	padding: 8px;
+	border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px;
+}
+
+div.index h3 {
+	color: #333;
+	background-color: #FFE8D0;
+}
+
+div.index h3 a,
+h2 a {
+	color: #fff;
+}
+
+.bottom_menu li a,
+.myasp_stepsite_menu li a,
+.myasp_article_menu li a,
+.myasp_stepsite_category_list li a,
+.myasp_article_category_list li a {
+	display: block;
+	
+	margin: 0 0 5px 0;
+	padding: 5px 3px 5px 20px;
+	list-style: none;
+	color: #333;
+
+	border: none;
+	line-height: 2em;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	
+	background-color: #F9F9F2;
+	background-image: url(images/arw.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+.myasp_stepsite_category_list li a {
+	background-color: #FFE599;
+}
+
+#qaList {
+	margin: 15px 5px 30px 5px;
+}
+
+#qaList dt{
+	display:block;
+	cursor:pointer;
+	background-color: #5E2D3D;
+	padding: 8px;
+	margin: 5px;
+	color: #fff;
+}
+#qaList dd{
+	background-color: #FDE6F0;
+	display:none;
+	padding: 8px;
+	margin: 5px;
+}
+#qaList dt,
+#qaList dd{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+#qaList dt.active{
+
+}
+
+.nostyle li {
+	margin: 15px 0;
+}
+
+#mp3step {
+	width: 362px;
+	dusplay: block;
+	margin: 10px 0;
+}
+
+#mp3step li {
+	list-style: none;
+	dusplay: block;
+	background-image: url(images/arw01.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin: 0;
+	padding: 20px 0 40px 0;
+}
+#mp3step li img {
+	border: 1px solid #E4E4E4;	
+}
+
+#mp3step li.last {
+	background: none;
+	padding: 10px 0 0 0;		
+}
+
+.imgbdr {
+	border: 1px solid #E4E4E4;		
+}
+
+.dlLink a:link,
+.dlLink a:visited {
+	color: #F63;
+}
+
+.dlLink a:hover {
+	color: #F30;
+}
+
+.myasp_stepsite_body p {
+	line-height: 1.5;
+	padding: 1em 0;
+}
+
+.myasp_article_list_item {
+	padding: 1em 0;
+}
+
+@media screen and (max-width: 949px) {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.pageWidth {
+		max-width: 100%;
+	}
+
+#pageHeader {
+padding-top: 10px;
+padding-bottom: 10px;
+height: auto;
+}
+	#logo {
+		max-width: 30%;
+	}
+
+	#pageTitle {
+		font-size: 1.6em;
+		padding-left: 32%;
+	}
+
+	#content2 {
+		width: 98%;
+		margin: 10px auto;
+		max-width: 100%;
+		float: none;
+	}
+
+	#sidebar {
+		width: 98%;
+		margin: 10px auto;
+		max-width: 100%;
+		float: none;
+	}
+
+	#login input {
+		max-width: 100%;
+	}
+
+.banner ul li {
+text-align: center;
+}
+}

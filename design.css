@@ -1,0 +1,1112 @@
+@charset "utf-8";
+
+/*-------------------------------------*/
+/* 全体                                */
+/*-------------------------------------*/
+body {
+	background	: #dcdcdc;
+	color		: #333;
+	font-family	:
+				'ヒラギノ角ゴ Pro W3',
+				'Hiragino Kaku Gothic Pro',
+				'メイリオ',
+				Meiryo,
+				'ＭＳ Ｐゴシック',
+				sans-serif;
+	font-size	: 0.8em;
+}
+a {
+	color			: #333;
+	text-decoration	: underline;
+}
+
+h1 {
+	margin-left		: auto;
+	margin-right	: auto;
+	margin-top		: 1em;
+	margin-bottom	: 0;
+	padding			: 1em 0 0 1em;
+	/*text-indent		: -999999px;*/
+	height			: 70px;
+	width			: 925px;
+	border-radius	: 5px;
+	background-color: rgba(0,0,0,0.8);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+}
+
+h2 {
+	border-left		: 5px solid #730000;
+	border-bottom	: 1px solid #aaa;
+	border-radius	: 3px;
+	color			: #333;
+	padding			: 3px 20px;
+	font-size		: 160%;
+	margin-bottom	: 1em;
+}
+h3 {
+	border-left		: 5px solid #ff5133;
+	border-radius	: 3px;
+	color			: #333;
+	padding			: 5px 10px;
+	font-size		: 130%;
+	margin-bottom	: 1em;
+}
+h4 {
+	color			: darkorange;
+	border-bottom	: 1px solid darkorange;
+	font-weight		: bold;
+	font-size		: 12pt;
+}
+
+hr{
+	margin-bottom	: 2em;
+	border			: 0;
+	height			: 1px;
+	background-image: -webkit-linear-gradient(
+						left,
+						transparent,
+						rgba(255, 105, 100, 0.75),
+						transparent);
+	background-image: -moz-linear-gradient(
+						left, 
+						transparent, 
+						rgba(255, 105, 100, 0.75),
+						transparent);
+	background-image: -ms-linear-gradient(
+						left, 
+						transparent, 
+						rgba(255, 105, 100, 0.75),
+						transparent);
+	background-image: -o-linear-gradient(
+						left, 
+						transparent, 
+						rgba(255, 105, 100, 0.75),
+						transparent);
+}
+
+ul.able li{
+	list-style-type : disc;
+	list-style-position	: inside;
+}
+
+/*必須項目*/
+.required,
+.indispensable{
+	font-weight		: bold;
+}
+
+/*必須エラー*/
+.error input{
+	background		: #FFDACC;
+}
+
+/*-------------------------------------*/
+/*  page top                           */
+/*-------------------------------------*/
+#page_top{
+	width			: 6.5em;
+	background		: rgba(0,0,0,0.4);
+	position		: fixed;
+	right			: 0px;
+	bottom			: 80px;
+	margin			: 0em;
+	border-radius	: 3px;
+	text-align		: center;
+}
+#page_top a{
+	color			: #fff;
+	display:block;
+	padding:0.5em;
+	padding-right: 0em;
+	padding-left:0em;
+    text-decoration: none;
+	text-align:right;
+	border-top-left-radius	: 3px;
+	border-bottom-left-radius	: 3px;
+}
+
+#page_top a:link , #page_top a:visited{
+	background	: url('images/pagetop.png') no-repeat scroll 0.5em center rgba(0,0,0,0.4);
+	color: #fff;
+}
+#page_top a:hover, #page_top a:active {
+	background	: url('images/pagetop.png') no-repeat scroll 0.5em center rgba(0,0,0,0.7);
+	color: #f60;
+}
+
+/*-------------------------------------*/
+/*  page bottom                        */
+/*-------------------------------------*/
+
+#page_bottom{
+	width			: 6.5em;
+	background		: rgba(0,0,0,0.4);
+	position		: fixed;
+	right			: 0px;
+	bottom			: 20px;
+	margin			: 0em;
+	border-radius	: 3px;
+	text-align		: center;
+}
+#page_bottom a{
+	color			: #fff;
+	display:block;
+	padding:0.5em;
+	padding-right: 0em;
+	padding-left:0em;
+    text-decoration: none;
+	text-align:right;
+	border-top-left-radius	: 3px;
+	border-bottom-left-radius	: 3px;
+}
+#page_bottom a:link , #page_bottom a:visited{
+	background	: url('images/pagebottom.png') no-repeat scroll 0.5em center rgba(0,0,0,0.4);
+	color: #fff;
+}
+#page_bottom a:hover, #page_bottom a:active {
+	background	: url('images/pagebottom.png') no-repeat scroll 0.5em center rgba(0,0,0,0.7);
+	color: #f60;
+}
+
+/*-------------------------------------*/
+/* layout                              */
+/*-------------------------------------*/
+#container {
+	text-align	: left;
+	width		: 950px;
+	margin-left	: auto;
+	margin-right: auto;
+	padding-top	: 1em;
+	background	: #fff;
+	background	: rgba(255,255,255,0.9);
+	border-radius	: 5px;
+}
+
+#header{
+	overflow	: hidden;
+	float		: left;
+	width		: 200px;
+}
+
+#content2{
+	color		: #333;
+	overflow	: visible;
+	float		: right;
+	width		: 750px;
+	min-height	: 400px;
+}
+#footer {
+	clear		: both;
+	padding		: 10px 0px;
+	text-align	: center;
+	color		: #fff;
+	background-color	: #333;
+	background-image	: url('images/footer.png');
+	background-repeat	: repeat-x;
+	border-radius		: 5px;
+}
+
+a.footer_link:link{
+	color: white !important;
+}
+a.footer_link:visited{
+	color: white !important;
+}
+a.footer_link:hover{
+	color: #C0C0C0 !important;
+}
+a.footer_link:active{
+	color: #C0C0C0 !important;
+}
+
+/*-------------------------------------*/
+/*  Login                              */
+/*-------------------------------------*/
+#login label{
+	float			: left;
+	clear			: left;
+	line-height		: 30px;
+	width			: 130px;
+}
+
+#login input{
+	width		: 400px;
+}
+
+
+#login .submit{
+	padding-left: 18em;
+}
+
+#login input[type="submit"]{
+	width		: auto;
+}
+
+#login .required label::after{
+	content		: '';
+}
+/*-------------------------------------*/
+/* パスワード再設定                    */
+/*-------------------------------------*/
+div.reminder pre{
+	margin-bottom	: 15px;
+}
+/*メールアドレス(パスワード)入力エリア*/
+#UpdatepwdUpdatepwdForm div,
+#AffiliatorReminderDoForm div,
+#AffiliatorReminderForm div{
+	margin-bottom	: 10px;
+}
+#UpdatepwdUpdatepwdForm label,
+#AffiliatorReminderDoForm label,
+#AffiliatorReminderForm label{
+	display			: inline-block;
+	width			: 160px;
+}
+/*送信ボタン*/
+#UpdatepwdUpdatepwdForm input[type="submit"],
+#AffiliatorReminderDoForm input[type="submit"],
+#AffiliatorReminderForm input[type="submit"]{
+	margin-left		: auto;
+	margin-right	: auto;
+	display			: block;
+}
+
+
+
+/*-------------------------------------*/
+/* Indexページ                         */
+/*-------------------------------------*/
+span.date{
+	color		: #638ced;
+	font-weight	: bold;
+}
+div.index table.sumPrice{
+	width		: 300px;
+}
+/*-------------------------------------*/
+/*  メインメニュー                     */
+/*-------------------------------------*/
+
+#header div.menu{
+	margin-left		: 10px;
+	margin-right	: 10px;
+}
+
+ul.menu a{
+	display			: block;
+	color			: #fff;
+	text-decoration	: none;
+}
+
+ul.menu li{
+	background		:url('images/buttonbg.png') repeat-x center;
+	line-height		: 4em;
+	border			: 1px solid #fff;
+	padding-left	: 1em;
+	border-radius	: 7px;
+	color			: #fff;
+	cursor			: pointer;
+}
+
+ul.menu li.submenu{
+	background		: none;
+}
+
+ul.menu li:hover{
+	opacity			: 0.8;
+}
+
+ul.menu li.submenu:hover{
+	opacity			: 1;
+}
+
+ul.menu .active{
+	background		: url('images/active_buttonbg.png') repeat-x center;
+}
+
+ul.menu li.hidden{
+	display			: none;
+}
+/*-------------------------------------*/
+/*  サブメニュー                       */
+/*-------------------------------------*/
+ul.submenu{
+	background			: none;
+	/*font-size			: 90%;*/
+}
+
+ul.submenu a{
+	color				: #696969;
+	text-decoration		: none;
+}
+
+ul.submenu li{
+	border-radius		: 0;
+	border				: none;
+	height				: 30px;
+	line-height			: 30px;
+	padding-left		: 15px;
+	background			: url('images/arrow_low.png') no-repeat left;
+}
+
+ul.submenu li:hover{
+	background			: url('images/arrow_high.png') no-repeat left;
+}
+
+.disnon{
+	display				: none;
+}
+
+
+/*-------------------------------------*/
+/*  メニュー                           */
+/*-------------------------------------*/
+
+.bottom_menu,
+.myasp_stepsite_menu,
+.myasp_article_menu,
+.myasp_stepsite_category_list,
+.myasp_article_category_list
+{
+	margin-top			: 2em;
+}
+
+.bottom_menu a,
+.myasp_stepsite_menu a,
+.myasp_article_menu a,
+.myasp_stepsite_category_list a,
+.myasp_article_category_list a
+{
+	border-bottom		: 2px solid #fff;
+	height				: 2em;
+	line-height			: 2em;
+	border-radius		: 5px;
+	display				: block;
+	color				: #fff;
+	text-decoration		: none;
+	padding-left		: 1em;
+	background			: url('images/bottom_buttonbg.png') repeat-x center;
+}
+/*
+.bottom_menu a:hover{
+	background			: url('images/upSide_arrow_high.png') no-repeat left;
+}*/
+
+/*-------------------------------------*/
+/*  パーツ                             */
+/*-------------------------------------*/
+
+.myasp_stepsite_body,
+.myasp_article_body
+{
+	margin-bottom		: 12px;
+}
+
+/*-------------------------------------*/
+/* ボタン                              */
+/*-------------------------------------*/
+
+
+input[type=submit],
+button,
+.buttonchange {
+	display			: inline;
+	font-size		: 110%;
+	width			: auto;
+	padding			: 5px 10px 5px 10px;
+	background		: #fff;
+	/*background		: url('images/button_arrow.png') no-repeat;*/
+	border-radius	: 4px;
+	border-color	: #a60000;
+	border-width	: 1px;
+	border-style	: solid;
+	cursor			: pointer;
+}
+
+input[type=submit]:hover,
+button:hover,
+.buttonchange:hover{
+	/*background-color: #f6eded;*/
+	position		: relative;
+	top				: 1px;
+	left			: 1px;
+}
+
+.buttonchange{
+	margin			: 5em 1em;
+	color			: #333;
+	text-decoration	: none;
+	line-height		: 5em;
+	margin			: 1em;
+}
+
+/*-------------------------------------*/
+/* Table全体                           */
+/*-------------------------------------*/
+table {
+	border-right	: 0;
+	clear			: both;
+	color			: #333;
+	margin-bottom	: 10px;
+	margin-right	: auto;
+	margin-left		: auto;
+	width			: 700px;
+	border			: 1px solid #aaa;
+	background-color: #f5f5f5;
+}
+
+th {
+	border			: 1px solid #aaa;
+	border-bottom	: 2px solid #555;
+	text-align		: center;
+	padding			: 2px;
+	font-weight		: normal;
+	color			: #fff;
+	background		: url('images/table_th.png') repeat-x center;
+}
+
+td{
+	border-left	: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+
+table tr td {
+	text-align		: left;
+	vertical-align	: middle;
+	border-bottom	: 1px solid silver;
+	padding-left	: 5px;
+	padding-right	: 5px;
+}
+
+table tr:nth-child(even) {
+	background		: #fff;
+}
+
+/*-------------------------------------*/
+/*  商品一覧                           */
+/*-------------------------------------*/
+
+table.item th{
+	font-size		: 120%;
+	height			: 2.5em;
+}
+
+table.item tr td{
+	border		: 0;
+	border-top	: 1px solid #aaa;
+}
+
+table.item .link_issue{
+	width			: 150px;
+	padding			: 1em 0 1em 1em;
+}
+
+table.item .money_str{
+	width			: 100px;
+	/*padding			: 1em 1em 1em 0;*/
+	text-align		: right;
+	border-right	: 1px solid #aaa;
+}
+
+table.item .money{
+	width			: 400px;
+	/*padding			: 1em 1em 1em 0;*/
+	text-align		: right;
+}
+table.item .money table{
+	margin-left		: auto;
+	margin-right	: auto;
+}
+
+table.item .explanation{
+	padding			: 1em;
+}
+
+table.item .submit{
+	margin			: 0;
+}
+
+/*-------------------------------------*/
+/*  商品紹介用リンク                   */
+/*-------------------------------------*/
+table.itemlist th{
+	background		: #808080;
+	border			: 1px solid #000;
+	color			: #fff;
+	width			: 200px;
+}
+table.itemlist tr:nth-child(2) td{
+	text-align		: right;
+	padding-right	: 10px;
+}
+table.itemlist td{
+	padding-left	: 1em;
+}
+
+input#textlink{
+	width			: 700px;
+}
+
+textarea#taglink{
+	width			: 700px;
+}
+
+.itemlist_memo_overflow{
+	overflow: hidden;
+	width: 75px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis; /* Safari */
+	-o-text-overflow: ellipsis; /* Opera */
+}
+
+
+
+/*-------------------------------------*/
+/*  紹介報酬                 */
+/*-------------------------------------*/
+
+table#proceed tr td,
+table.proceed tr td{
+	padding		: 0px;
+	text-align	: center;
+}
+
+table#proceed th.id,
+table.proceed th.id{/*注文ID＆*/
+	width		: 80px;
+}
+
+table#proceed th.date,
+table.proceed th.date{/*販売日時*/
+	width		: 100px;
+}
+
+table#proceed td.item_name,
+table.proceed td.item_name{/*商品名*/
+	padding-left: 10px;
+	text-align	: left;
+}
+
+table#proceed th.state,
+table.proceed th.state{/*承認状態*/
+	width		: 80px;
+}
+
+table#proceed td.money,
+table.proceed td.money{/*紹介報酬額*/
+	width			: 100px;
+	text-align		: right;
+	padding-right	: 10px;
+}
+
+table#proceed tr:nth-child(even),
+table.proceed tr:nth-child(even){
+	background		: none;
+}
+
+table#proceed hr,
+table.proceed hr{
+	margin			: 0;
+	background		: #aaa;
+}
+
+/*-------------------------------------*/
+/*  月毎売上レポート   */
+/*-------------------------------------*/
+table.sumPrice tr td{
+	border		: 1px solid #aaa;
+}
+table.sumPrice td:last-child{
+	text-align		: right;
+	padding-right	: 5px;
+}
+
+/*-------------------------------------*/
+/*  アクセス履歴                       */
+/*-------------------------------------*/
+#FilterItemName{
+	width			: 300px;
+}
+/*-------------------------------------*/
+/*  ページングナビゲータ               */
+/*-------------------------------------*/
+div.pagination{
+	clear			: both;
+}
+
+.pagination ul{
+	list-style-type	: none;
+	text-align		: left;
+}
+
+.pagination li.nb{
+	display			: inline;
+	margin-right	: 20px;
+}
+table#paginator{
+	border			: 0px;
+}
+table#paginator tr td{
+	border			: 0px;
+	background		: #fafafa;
+}
+table#paginator td:nth-child(2){
+	width			: 150px;
+	text-align		: right;
+	padding			: 0px;
+}
+/*-------------------------------------*/
+/*  Form - 共通                        */
+/*-------------------------------------*/
+.submit{
+	margin-bottom		: 1em;
+	/*text-align			: center;*/
+}
+
+/*-------------------------------------*/
+/*  Form - 絞込み・CSV                 */
+/*-------------------------------------*/
+table.search{
+	margin-bottom	: 0px;
+	border			: 0px;
+	font-size		: 85%;
+	font-family	:none;
+}
+table.search tr td{
+	border			: 0px;
+	padding			: 5px 0px;
+	background		: #fafafa;
+}
+table.search td#submit{
+	text-align		: center;
+}
+ul#search{
+	margin-bottom	: 2em;
+	zoom			: 1;
+	height			: 70px;
+}
+
+ul#search li{
+	float			: left;
+}
+
+ul#search li#category div{
+	width			: 150px;
+}
+
+ul#search li#item_name div{
+	width			: 330px;
+}
+
+ul#search label{
+	float			: left;
+	clear			: left;
+	line-height		: 35px;
+	padding-right	: 1em;
+}
+
+ul#search input[type="text"]{
+	width		: 300px;
+}
+
+ul#search input[type="submit"]{
+	margin-left	: 1em;
+}
+
+ul#search li#csv{
+	width		: 150px;
+	padding-top	: 30px;
+	padding-left: 10px;
+}
+
+ul#search li#submit{
+	padding-top	: 30px;
+}
+
+ul#search div.submit{
+	margin		: 0;
+}
+
+ul#search div.submit input{
+	margin		: 0;
+}
+/*-------------------------------------*/
+/*  お問い合わせ                       */
+/*-------------------------------------*/
+
+div.ask{
+	margin-right	: auto;
+	margin-left		: auto;
+}
+form#AskAskConfirmForm div,
+form#AskAskForm div,
+form#AskAskDoForm div{
+	margin-bottom	: 10px;
+}
+form#AskAskConfirmForm label,
+form#AskAskDoForm label,
+form#AskAskForm label{
+	width		: 140px;
+	display		: block;
+	float		: left;
+}
+form#AskAskConfirmForm div.submit,
+form#AskAskDoForm div.submit,
+form#AskAskForm div.submit{
+	margin-top	: 15px;
+}
+table.ask th:nth-child(1){
+	width			: 40px;
+}
+table.ask tr td:nth-child(1){
+	text-align		: center;
+}
+/*-------------------------------------*/
+/*  個人設定                           */
+/*-------------------------------------*/
+
+table.nondesign{
+	background	: #fff;
+	padding-top	: 2em;
+}
+
+table.nondesign tr td{
+	border		: 0;
+	padding		: 1em 0;
+}
+
+table.nondesign .title{
+	width			: 200px;
+	text-align		: right;
+	padding-right	: 1em;
+}
+
+table.nondesign .submit{
+	text-align		: center;
+}
+
+form#AffiliatorSettingForm label{
+}
+
+/*-------------------------------------*/
+/*  パスワード変更                     */
+/*-------------------------------------*/
+
+form#PasswordPasswordForm{
+	padding-bottom		: 10px;
+}
+
+
+form#PasswordPasswordForm label{
+	clear				: both;
+	padding-right		: 15px;
+	margin-bottom		: 20px;
+	width				: 110px;
+	display				: inline-block;
+}
+
+form#PasswordPasswordForm input[type="password"]{
+	clear				: both;
+	width				: 150px;
+	margin-bottom		: 20px;
+}
+
+
+/*-------------------------------------*/
+/*  マニュアル                         */
+/*-------------------------------------*/
+div.manual_main h4{
+	margin-top		: 50px;
+}
+
+
+ul.manual_menu li{
+	float		: left;
+	padding		: 0px 10px;
+}
+
+ul.manual_menu li a{
+	text-decoration	: none;
+	border-bottom	: 3px solid darkorange;
+}
+div.manual_header pre{
+	background		: #fff;
+	border-width	: 1px 2px 2px 1px;
+	border-color	: darkorange;
+	border-style	: solid;
+	padding			: 8px;
+}
+div.manual_header span{
+	font-weight	: bold;
+	font-size	: 130%;
+}
+div.manual_header span#manual_item{
+	color		: green;
+}
+div.manual_header span#manual_affiliator{
+	color		: darkorange;
+}
+div.manual_header span#manual_seller{
+	color		: royalblue;
+}
+div.manual_main pre{
+	background	: none;
+	border		: none;
+	padding		: 0;
+}
+
+div.manual_main img{
+	border		: 1px solid black;
+}
+
+table.manual{
+	width			: 710px;
+	margin			: 0;
+	padding			: 0;
+	clear			: none;
+}
+
+table.manual tr td{
+	padding			: 10px 0px 10px 10px;
+}
+
+table.manual tr td:nth-child(1){
+	font-weight		: bold;
+	width			: 145px;
+}
+
+div.manual_main{
+	margin-bottom	: 50px;
+}
+
+div.manual_main hr{
+	background		: #aaa;
+	width			: 80%;
+	margin			: 5px auto;
+}
+
+/*-------------------------------------*/
+/*  キャンペーン広告一覧              */
+/*-------------------------------------*/
+table.payment_affiliator
+{
+	width			: 425px ;
+	margin-left : 10px;
+}
+
+table.payment_affiliator th,
+table.payment_affiliator td
+{
+	width	: 100px ;
+	font-size: 80%;
+	height: 2.5em;
+	text-align:center;
+}
+
+table.payment_affiliator tr.payment_affiliator_special td
+{
+	text-align:left;
+	background-color: #ffffff;
+	border-top	: 1px solid #fff;
+	border-left	: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+/*-------------------------------------*/
+/*  文字装飾                           */
+/*-------------------------------------*/
+.attention{
+	color	: red;
+}
+
+span.red{
+	display			: inline-block;
+	color			: black;
+	font-weight		: bold;
+	padding			: 7px;
+	border-radius	: 5px;
+	border			: 3px solid red;
+}
+
+/*-------------------------------------*/
+/*  fieldset                           */
+/*-------------------------------------*/
+fieldset {
+	border: none;
+	margin-bottom: 1em;
+	padding: 16px 10px;
+}
+fieldset legend {
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0;
+	padding: 10px 0 0;
+}
+fieldset fieldset legend {
+	font-size: 120%;
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+
+/*-------------------------------------*/
+/*  必須マーク                         */
+/*-------------------------------------*/
+form .required {
+	font-weight: bold;
+}
+form .required label:first-child:after {
+	color: #e32;
+	content: '*';
+	display:inline;
+}
+
+/*-------------------------------------*/
+/*  textarea                           */
+/*-------------------------------------*/
+input, textarea {
+	font-size: 100%;
+}
+
+/*-------------------------------------*/
+/*  select                             */
+/*-------------------------------------*/
+select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+	width: 100%;
+}
+option {
+	font-size: 120%;
+	padding: 0 3px;
+}
+
+/*-------------------------------------*/
+/*  checkbox                           */
+/*-------------------------------------*/
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+div.checkbox label {
+	display: inline;
+}
+
+/*-------------------------------------*/
+/*  radio                              */
+/*-------------------------------------*/
+input[type=radio] {
+	width:auto;
+	margin		: 10px 5px 0px 10px;
+	padding: 0;
+}
+.radio label {
+	margin: 0 0 6px 20px;
+	line-height: 26px;
+}
+
+/*-------------------------------------*/
+/* コメントとコメントフォーム          */
+/*-------------------------------------*/
+.comment_form_nickname_label {
+	display: block;
+}
+
+.comment_form_nickname_input {
+	display: block;
+}
+
+.comment_form_title_label {
+	display: block;
+}
+
+.comment_form_title_input {
+	display: block;
+}
+
+.comment_form_body_label {
+	display: block;
+}
+
+.comment_form_body_input {
+	display: block;
+}
+
+
+.commentlist {
+	padding: 10px;
+}
+
+.comment {
+	margin : 1em;
+	padding : 1em;
+	border : 1px solid darkorange;
+	list-style : none;
+}
+
+.comment_author {
+	float:left;
+	margin-bottom : 1em;
+}
+
+.comment_meta {
+	float:right;
+	margin-bottom : 1em;
+}
+
+.comment_reply {
+	float:right;
+	margin-bottom : 1em;
+}
+
+.comment_reply_cancel {
+	margin-bottom : 1em;
+}
+
+.comment_title {
+	clear:both;
+	margin-bottom: 1em;
+	padding-left : 1em;
+	font-size: 120%;
+	font-weight: bold;
+	border-left : 1em solid darkorange;
+	border-bottom : 1px solid darkorange;
+}
+
+.comment_body {
+	padding-left : 1em;
+}
+
+.article_comment_form_body {
+	margin : 1em;
+	padding : 1em;
+}
+
+.comment_message {
+	clear: both;
+	color: #B00;
+	background-color: #fff;
+	border-left: 10px solid #FF2700;
+	border-bottom: 1px solid #AAA;
+	border-radius: 5px;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+	padding: 5px;
+	opacity: 0.8;
+}
+
+
